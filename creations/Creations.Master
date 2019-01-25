@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Creations.master.cs" Inherits="_2019MU.creations.Creations" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Meta -->
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard." />
+    <meta name="author" content="ThemePixels" />
+
+    <title>CREATIONS | MYUPIX</title>
+
+    <!-- vendor css -->
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet" />
+    <link href="../lib/chartist/css/chartist.css" rel="stylesheet" />
+    <link href="../lib/rickshaw/css/rickshaw.min.css" rel="stylesheet" />
+
+    <!-- Slim CSS -->
+    <link rel="stylesheet" href="../css/slim.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+        
+        <div class="slim-header">
+      <div class="container">
+        <div class="slim-header-left">
+          <h2 class="slim-logo"><a href="dashboard.aspx">MYUPIX<span>.</span></a></h2>
+
+          <div class="search-box">
+            <input type="text" class="form-control" placeholder="Search">
+            <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+          </div><!-- search-box -->
+        </div><!-- slim-header-left -->
+        <div class="slim-header-right">
+          
+          
+          <div class="dropdown dropdown-c">
+            <a href="#" class="logged-user" data-toggle="dropdown">
+              <img src="../images/Upix-Creations.jpg" alt="Upix Creations">
+              <span><asp:Label ID="userName" runat="server" Text="Name" CssClass="text-capitalize"></asp:Label></span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <nav class="nav">
+                <a href="profile.aspx" class="nav-link"><i class="icon ion-person"></i> View/Edit Profile</a>
+                <a href="leavestatus.aspx" class="nav-link"><i class="icon ion-alert"></i> Leave Status</a>
+                <a href="changepassword.aspx" class="nav-link"><i class="icon ion-locked"></i>Change Password</a>
+                <a href="../signout.aspx" class="nav-link"><i class="icon ion-forward"></i> Sign Out</a>
+              </nav>
+            </div><!-- dropdown-menu -->
+          </div><!-- dropdown -->
+        </div><!-- header-right -->
+      </div><!-- container -->
+    </div><!-- slim-header -->
+
+    <div class="slim-navbar">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.aspx">
+              <i class="icon ion-ios-home-outline"></i>
+              <span>Dashboard</span>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="holidaylist.aspx">
+               <i class="icon ion-calendar"></i>
+              <span>Holiday List</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="applyleave.aspx">
+              <i class="icon ion-heart"></i>
+              <span>Apply Leave</span>
+            </a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="leavestatus.aspx">
+              <i class="icon ion-alert"></i>
+              <span>Leave Status</span>
+            </a>
+          </li>
+          <li class="nav-item with-sub">
+            <a class="nav-link" href="#" data-toggle="dropdown">
+              <i class="icon ion-ios-gear-outline"></i>
+              <span>Add Schedule</span>
+            </a>
+            <div class="sub-item">
+              <ul>
+                <li><a href="animation.aspx">Animation</a></li>
+                <li><a href="#">Modeling</a></li>
+                <li><a href="#">Lighting</a></li>
+                <li><a href="#">Rigging</a></li>
+                <li><a href="#">VFX</a></li>
+              </ul>
+            </div><!-- dropdown-menu -->
+          </li>
+          <%--<li class="nav-item">
+            <a class="nav-link" href="payslipdowload.aspx">
+              <i class="icon ion-document"></i>
+              <span>Payslip Download</span>
+            </a>
+          </li>--%>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon ion-ios-analytics-outline"></i>
+              <span>Coming Soon</span>
+            </a>
+          </li>
+        </ul>
+      </div><!-- container -->
+    </div><!-- slim-navbar -->
+          
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    
+
+    <script src="../lib/jquery/js/jquery.js"></script>
+    <script src="../lib/popper.js/js/popper.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="../lib/chartist/js/chartist.js"></script>
+    <script src="../lib/d3/js/d3.js"></script>
+    <script src="../lib/rickshaw/js/rickshaw.min.js"></script>
+    <script src="../lib/jquery.sparkline.bower/js/jquery.sparkline.min.js"></script>
+
+    <script src="../js/ResizeSensor.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/slim.js"></script>
+</body>
+</html>
